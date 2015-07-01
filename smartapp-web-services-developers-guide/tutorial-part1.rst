@@ -215,7 +215,7 @@ To get information about the switch, we will call the /switch endpoint using a G
 
 .. code-block:: bash
 
-  curl -H "Authorization: Bearer <api token>" <api endpoint>/switch
+  curl -H "Authorization: Bearer <api token>" <api endpoint>/switches
 
 This should return a JSON response like the following::
 
@@ -225,7 +225,7 @@ To turn the switch on or off, call the /switch endpoint using a PUT request, pas
 
 .. code-block:: bash
 
-  curl -H "Authorization: Bearer <api token>" -X PUT <api endpoint>/switch/on
+  curl -H "Authorization: Bearer <api token>" -X PUT <api endpoint>/switches/on
 
 Change the command value to ``"off"`` to turn the switch off. Try turning the switch on and off, and then using curl to get the status, to see that it changed.
 
